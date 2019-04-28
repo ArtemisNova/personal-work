@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Crimson Fitness | Home</title>
+		<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1><a href="index.html"><img src="images/logo_smallest.jpg" default="home page"></a></h1>
+			</div>
+			<!-- header end -->
+			
+			<div id="menu">
+				<ul>
+					<li><a onmouseover="document.home_button.src='images/home_button_rollover.jpg'" onmouseout="document.home_button.src='images/home_button.jpg'" href="index.html">
+																											<img src="images/home_button.jpg" alt="Home" name="home_button"></a></li>
+					<li><a onmouseover="document.about_button.src='images/about_button_rollover.jpg'" onmouseout="document.about_button.src='images/about_button.jpg'" href="about.html">
+																											<img src="images/about_button.jpg" alt="About" name="about_button"></a></li>
+					<li><a onmouseover="document.classes_button.src='images/classes_button_rollover.jpg'" onmouseout="document.classes_button.src='images/classes_button.jpg'" href="classes.html">
+																											<img src="images/classes_button.jpg" alt="Classes" name="classes_button"></a></li>
+					<li><a onmouseover="document.locations_button.src='images/location_button_rollover.jpg'" onmouseout="document.locations_button.src='images/location_button.jpg'" href="locations.html">
+																											<img src="images/location_button.jpg" alt="Locations" name="locations_button"></a></li>
+					<li><a onmouseover="document.contact_button.src='images/contact_button_rollover.jpg'" onmouseout="document.contact_button.src='images/contact_button.jpg'" href="contact.html">
+																											<img src="images/contact_button.jpg" alt="Contact" name="contact_button"></a></li>
+				</ul>
+			</div>
+			<!-- menu end -->
+			
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="images/image_slideshow1.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="images/image_slideshow2.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="images/image_slideshow3.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+					<img src="images/image_slideshow4.jpg" style="width:100%">
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<!-- slideshow end -->
+			<br>
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+			<!-- slideshow controls end -->
+				
+				
+			<h2>START YOUR FUTURE TODAY</h2>
+			<div id="text-body">
+				<p>Here at Crimson Fitness, we pride ourselves in providing the best experience for you. 
+				<br><br>We provide top-notch equipment and fully qualified instructors to our customers
+				to ensure that they are able fulfill their goals of fitness and health. No matter your experience level, you can achieve your goals.
+				<br><br>Check out our <a href="#">fitness classes</a>, or <a href="contact.html">contact us</a> for more details!
+				</p>
+			</div>
+			<!-- text-body end -->
+		</div>
+		<!-- wrapper end -->
+		
+		<div id="footer">
+			<p>Copyright&copy 2017 <a href="contact.html">Crimson Fitness Ltd.</a>, all rights Reserved. Designed By <a href="mailto:scott.kelly@ucdconnect.ie">Scott Kelly</a>.</p>
+		</div>
+		<!-- footer end -->
+		
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+			}
+		</script>
+	</body>
+</html>
+

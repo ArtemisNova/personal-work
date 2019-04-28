@@ -1,0 +1,6 @@
+require 'test/unit'
+require_relative 'kangaroo_test.rb'
+require_relative 'die_test.rb'
+require_relative 'point_test.rb'
+require_relative 'RollStats_test.rb'
+require_relative 'grid_test.rb'

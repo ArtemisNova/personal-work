@@ -1,0 +1,17 @@
+Scott Kelly
+14346251
+ASSIGNMENT 1 STATEMENT
+
+
+PRODUCT CLASS:
+Class stores data that a product can have
+Handles getting and setting the data within the product
+Also has a print method to format and print data in format requested
+
+SHOP CLASS:
+Holds an array of product objects, ie all the products that the shop sells
+Reads in data from a file in a specific method, and formats it to create the product classes
+Print method prints out the products data and total value in shop and average product price
+
+
+I am confident that the program works as requested

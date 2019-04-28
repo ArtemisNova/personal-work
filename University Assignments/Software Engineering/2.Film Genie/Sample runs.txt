@@ -1,0 +1,124 @@
+Run 1 - Testing the guess character and movie functions
+==========================================================
+********* WELCOME TO FILM GENIE!!!!!********
+
+
+
+The film to guess is:
+**** ******
+
+Type 'c' to guess a character, and 'f' to guess the film!
+(user enters c)
+
+Please enter your character guess!!
+(user enters t)
+
+Well done!!
+t*** ******
+
+Type 'c' to guess a character, and 'f' to guess the film!
+(user enters c)
+
+Please enter your character guess!!
+(user enters q)
+
+Letter not in the film!!
+t*** ******
+
+
+// After some time...
+
+
+ta*i *ri**r
+
+Type 'c' to guess a character, and 'f' to guess the film!
+(user enters f)
+
+You have 5 guesses remaining!!
+
+Please enter your guess!
+user enters "Taxi Driver")
+
+You got it!!!
+
+1st guess.... You are a film genie!!!
+
+Would you like to play again? (y/n)
+(user enters n)
+
+Thank you for playing!!!
+
+
+Run 2 - Running out of guesses
+================================================================
+
+********* WELCOME TO FILM GENIE!!!!!********
+
+
+
+The film to guess is:
+*** ****** ** *****
+
+Type 'c' to guess a character, and 'f' to guess the film!
+(user enters f)
+
+You have 5 guesses remaining!!
+
+Please enter your guess!
+(incorrect guess)
+
+Incorrect!! Try again ;) (check spelling :P)
+*** ****** ** *****
+
+Type 'c' to guess a character, and 'f' to guess the film!
+f
+
+You have 4 guesses remaining!!
+
+// After some time...
+
+You have 1 guesses remaining!!
+
+Please enter your guess!
+(incorrect guess)
+
+Incorrect!! Try again ;) (check spelling :P)
+
+You lost!!!! :(
+
+Would you like to play again? (y/n)
+(user enters n)
+Thank you for playing!!!
+
+
+Run 3 - invalid inputs and case-sensitive testing
+======================================================
+
+********* WELCOME TO FILM GENIE!!!!!********
+
+
+
+The film to guess is:
+*** ***** **** ** **********
+
+Type 'c' to guess a character, and 'f' to guess the film!
+(user enters a)
+
+Invalid input!! Enter either c or f
+f
+
+You have 5 guesses remaining!!
+
+Please enter your guess!
+(user inputs "mR. SMitH gOeS to WasHINGton")
+
+You got it!!!
+
+1st guess.... You are a film genie!!!
+
+Would you like to play again? (y/n)
+(user enters a)
+
+Invalid input!! Enter y or n
+(user enters n)
+Thank you for playing!!!

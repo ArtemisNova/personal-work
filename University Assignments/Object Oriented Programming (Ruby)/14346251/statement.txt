@@ -1,0 +1,4 @@
+Scott Kelly, 14346251
+
+Parts 1,2 and 3 completed correctly, Part 4 attempted but unfinished
+Part 4 only runs just a few times instead of running until there is no better option

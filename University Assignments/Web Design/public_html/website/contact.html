@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Crimson Fitness | Contact Us</title>
+		<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1><a href="index.html"><img src="images/logo_smallest.jpg" default="home page"></a></h1>
+			</div>
+			<!-- header end -->
+			
+			<div id="menu">
+				<ul>
+					<li><a onmouseover="document.home_button.src='images/home_button_rollover.jpg'" onmouseout="document.home_button.src='images/home_button.jpg'" href="index.html">
+																											<img src="images/home_button.jpg" alt="Home" name="home_button"></a></li>
+					<li><a onmouseover="document.about_button.src='images/about_button_rollover.jpg'" onmouseout="document.about_button.src='images/about_button.jpg'" href="about.html">
+																											<img src="images/about_button.jpg" alt="About" name="about_button"></a></li>
+					<li><a onmouseover="document.classes_button.src='images/classes_button_rollover.jpg'" onmouseout="document.classes_button.src='images/classes_button.jpg'" href="classes.html">
+																											<img src="images/classes_button.jpg" alt="Classes" name="classes_button"></a></li>
+					<li><a onmouseover="document.locations_button.src='images/location_button_rollover.jpg'" onmouseout="document.locations_button.src='images/location_button.jpg'" href="locations.html">
+																											<img src="images/location_button.jpg" alt="Locations" name="locations_button"></a></li>
+					<li><a onmouseover="document.contact_button.src='images/contact_button_rollover.jpg'" onmouseout="document.contact_button.src='images/contact_button.jpg'" href="contact.html">
+																											<img src="images/contact_button.jpg" alt="Contact" name="contact_button"></a></li>
+				</ul>
+			</div>
+			<!-- menu end -->
+			<h3>Please Enter your details, and we'll get back to you soon!<img src="images/mail.png" width="300px" height="300px" align="right" style="padding:10px"/></h3>
+			<br><br>
+			<div id="form">
+				<form name="contactForm" method="GET" action="contact.php">
+					<table width="50%">
+						<tr>
+							<td valign="top">
+								<label for="first_name">First Name *</label>
+							</td>
+							<td valign="top">
+								<input  type="text" name="first_name" maxlength="50" size="30" required>
+							</td>
+						</tr>
+						
+						<tr>
+							<td valign="top">
+								<label for="first_name">Last Name *</label>
+							</td>
+							<td valign="top">
+								<input  type="text" name="last_name" maxlength="50" size="30" required>
+							</td>
+						</tr>
+						
+						<tr>
+							<td valign="top">
+								<label for="email">Email Address *</label>
+							</td>
+							<td valign="top">
+								<input  type="text" name="email" maxlength="80" size="30" required>
+							</td>
+						</tr>
+										
+						<tr>
+							<td valign="top">
+								<label for="telephone">Phone</label>
+							</td>
+							<td valign="top">
+								<input  type="text" name="telephone" maxlength="30" size="30">
+							</td>
+						</tr>
+										
+						<tr>
+							<td valign="top">
+								<label for="comments">Comments</label>
+							</td>
+							<td valign="top">
+								<textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+							</td>
+						</tr>
+										
+						<tr>
+							<td colspan="2" style="text-align:center">
+								<input type="submit" value="Submit">
+							</td>
+						</tr>
+					</table>
+					<br><br>
+					* Mandatory fields
+				</form>
+			</div>
+			<!-- form end -->
+		</div>
+		<!-- wrapper end -->
+		
+		<div id="footer">
+			<p>Copyright&copy 2017 <a href="contact.html">Crimson Fitness Ltd.</a>, all rights Reserved. Designed By <a href="mailto:scott.kelly@ucdconnect.ie">Scott Kelly</a>.</p>
+		</div>
+		<!-- footer end -->
+	</body>
+</html>
