@@ -1,0 +1,1 @@
+These are assignments from a module that taught me the fundamentals of contemporary/ modern software methodologies. The module focused on agile software development, unit testing, re-factoring techniques, etc.
