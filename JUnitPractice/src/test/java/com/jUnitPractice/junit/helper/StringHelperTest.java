@@ -4,15 +4,26 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class StringHelperTest {
+import junit.framework.TestCase;
 
-	@Test
-	public void testTruncateAInFirst2Positions() {
-		StringHelper helper = new StringHelper();
-		String result1 = helper.truncateAInFirst2Positions("AACD");
-		String result2 = helper.truncateAInFirst2Positions("ACD");
-		assertEquals("CD", result1);
-		assertEquals("CD", result2);
+public class StringHelperTest extends TestCase {
+	
+	private StringHelper helper;
+	
+	@Override
+	protected void setUp() throws Exception{
+		super.setUp();
+		helper = new StringHelper();
 	}
 
+	@Test
+	public void testTruncateAInFirst2Positions_First2Pos() {
+		
+		assertEquals("CD", helper.truncateAInFirst2Positions("AACD"));
+	}
+
+	@Test
+	public void testTruncateAInFirst2Positions_First1Pos() {
+		assertEquals("CD", helper.truncateAInFirst2Positions("ACD"));
+	}
 }
